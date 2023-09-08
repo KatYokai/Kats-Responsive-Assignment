@@ -78,7 +78,7 @@ p {
 }
 
 .about-paragraphs {
-  display: flex;
+  display: block;
   text-align: center;
   margin: 10px auto;
   padding: 20px 0;
@@ -117,4 +117,26 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 414px) {
+  body {
+    margin: 100px 0;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    padding: 0;
+  }
+  .about-paragraphs {
+    padding: 0;
+  }
 }
